@@ -11,9 +11,15 @@ const styles = {
 const NavBar = ({ classes: { container } }) => (
   <nav className={container}>
     <ul>
-      <li>HOME</li>
-      <li>CONTACT</li>
-      <li>PRIVACY</li>
+      <li>
+        <a href="#home">HOME</a>
+      </li>
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+      <li>
+        <a href="#privacy">PRIVACY</a>
+      </li>
     </ul>
   </nav>
 );

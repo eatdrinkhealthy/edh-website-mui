@@ -3,22 +3,30 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
-  container: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "100vh",
+  section: {
+    height: "400px",
+    border: "2px solid brown",
+    margin: "5px",
+    padding: "5px",
   },
 };
 
 const Content = props => {
   const {
-    classes: { container },
+    classes: { section },
   } = props;
 
   return (
-    <div className={container}>
-      <p>This is your content.</p>
+    <div>
+      <div id="home" className={section}>
+        Home
+      </div>
+      <div id="contact" className={section}>
+        Contact
+      </div>
+      <div id="privacy" className={section}>
+        Privacy
+      </div>
     </div>
   );
 };
