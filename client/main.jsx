@@ -9,9 +9,20 @@ import App from "../imports/ui/App";
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
+    fontFamily: ["Lato", '"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"].join(
+      ",",
+    ),
   },
   palette: {
-    // modify theme settings here.
+    primary: {
+      main: "#f28020",
+    },
+    secondary: {
+      main: "#767676",
+    },
+    error: {
+      main: "#cc4b37",
+    },
   },
 });
 

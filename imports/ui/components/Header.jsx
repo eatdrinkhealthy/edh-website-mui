@@ -6,11 +6,18 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 
-const styles = {
+const styles = theme => ({
   root: {
     flexGrow: 1,
   },
-};
+  appBar: {
+    borderBottom: `8px solid ${theme.palette.primary.main}`,
+    boxShadow: "none",
+  },
+  toolBar: {
+    backgroundColor: "white",
+  },
+});
 
 // App component - represents the whole app
 const Header = props => {
@@ -19,11 +26,9 @@ const Header = props => {
   return (
     <Fragment>
       <div className={classes.root}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
-              Hello!
-            </Typography>
+        <AppBar position="static" className={classes.appBar}>
+          <Toolbar className={classes.toolBar}>
+            <Typography variant="h6">Hello!</Typography>
           </Toolbar>
         </AppBar>
       </div>
