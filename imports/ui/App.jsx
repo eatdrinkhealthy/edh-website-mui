@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Content from "./components/Content";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import PageNotFound from "./components/PageNotFound";
 
 // App component - represents the whole app
@@ -17,6 +18,7 @@ export default class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Content} />
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
             <Route component={PageNotFound} />
           </Switch>
         </div>

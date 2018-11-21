@@ -12,13 +12,13 @@ const NavBar = ({ classes: { container } }) => (
   <nav className={container}>
     <ul>
       <li>
-        <a href="#home">HOME</a>
+        <a href="/">HOME</a>
       </li>
       <li>
-        <a href="#contact">CONTACT</a>
+        <a href="/#contact">CONTACT</a>
       </li>
       <li>
-        <a href="#privacy">PRIVACY</a>
+        <a href="/privacy-policy">PRIVACY</a>
       </li>
     </ul>
   </nav>
