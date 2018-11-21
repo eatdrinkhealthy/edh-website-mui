@@ -23,11 +23,26 @@ Array [
             />
           </a>
         </div>
+        <nav
+          className="NavBar-container-45"
+        >
+          <ul>
+            <li>
+              HOME
+            </li>
+            <li>
+              CONTACT
+            </li>
+            <li>
+              PRIVACY
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   </div>,
   <div
-    className="Content-container-45"
+    className="Content-container-46"
   >
     <p>
       This is your content.

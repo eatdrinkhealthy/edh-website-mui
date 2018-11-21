@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Logo from "./Logo";
+import NavBar from "./NavBar";
 
 const styles = theme => ({
   root: {
@@ -29,6 +30,7 @@ const Header = props => {
         <AppBar position="static" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
             <Logo />
+            <NavBar />
           </Toolbar>
         </AppBar>
       </div>
