@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
+import Logo from "./Logo";
 
 const styles = theme => ({
   root: {
@@ -28,7 +28,7 @@ const Header = props => {
       <div className={classes.root}>
         <AppBar position="static" className={classes.appBar}>
           <Toolbar className={classes.toolBar}>
-            <Typography variant="h6">Hello!</Typography>
+            <Logo />
           </Toolbar>
         </AppBar>
       </div>
