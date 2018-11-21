@@ -1,24 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
   container: {
     // margin: "5px 0 5px 0",
   },
+  selected: {
+    color: "red",
+  },
 };
 
-const NavBar = ({ classes: { container } }) => (
+const NavBar = ({ classes: { container, selected } }) => (
   <nav className={container}>
     <ul>
       <li>
-        <a href="/">HOME</a>
+        <NavLink exact to="/" activeClassName={selected}>
+          HOME
+        </NavLink>
       </li>
       <li>
-        <a href="/#contact">CONTACT</a>
+        <NavLink exact to="/#contact" activeClassName={selected}>
+          CONTACT
+        </NavLink>
       </li>
       <li>
-        <a href="/privacy-policy">PRIVACY</a>
+        <NavLink exact to="/privacy-policy" activeClassName={selected}>
+          PRIVACY
+        </NavLink>
       </li>
     </ul>
   </nav>
