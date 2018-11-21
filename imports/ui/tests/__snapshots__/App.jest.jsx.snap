@@ -6,21 +6,43 @@ Array [
     className="Header-root-1"
   >
     <header
-      className="MuiPaper-root-11 MuiPaper-elevation4-17 MuiAppBar-root-2 MuiAppBar-positionStatic-6 MuiAppBar-colorPrimary-9"
+      className="MuiPaper-root-13 MuiPaper-elevation4-19 MuiAppBar-root-4 MuiAppBar-positionStatic-8 MuiAppBar-colorPrimary-11 Header-appBar-2"
     >
       <div
-        className="MuiToolbar-root-38 MuiToolbar-regular-40 MuiToolbar-gutters-39"
+        className="MuiToolbar-root-40 MuiToolbar-regular-42 MuiToolbar-gutters-41 Header-toolBar-3"
       >
-        <h6
-          className="MuiTypography-root-42 MuiTypography-h6-59 MuiTypography-colorInherit-71"
+        <div
+          className="Logo-container-44"
         >
-          Hello!
-        </h6>
+          <a
+            href="/"
+          >
+            <img
+              alt="Company Logo"
+              src="images/logo.png"
+            />
+          </a>
+        </div>
+        <nav
+          className="NavBar-container-45"
+        >
+          <ul>
+            <li>
+              HOME
+            </li>
+            <li>
+              CONTACT
+            </li>
+            <li>
+              PRIVACY
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   </div>,
   <div
-    className="Content-container-77"
+    className="Content-container-46"
   >
     <p>
       This is your content.

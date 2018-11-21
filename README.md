@@ -1,6 +1,6 @@
-# meteor_react_material
+# Eat Drink Healthy Website (Material-UI)
 
-A simple boilerplate to start projects with Meteor, React, and Material-UI.
+A simple splash page website for Eat Drink Healthy.
 
 ## Installed Components
 * Meteor
@@ -16,7 +16,10 @@ A simple boilerplate to start projects with Meteor, React, and Material-UI.
     - Redux Forms
     - Flow
 
-## Tech Notes
+## Styling
+* Material-UI components are used
+* MuiThemeProvider is used
+* Inline styling is used
 * Roboto Font is included via link in main.html
 
 ## Testing
@@ -92,16 +95,6 @@ Each testing framework comes with a default, or set of available assertion libra
     - it is possible to capture incorrect code or even 'undefined' in cases
 * snapshot files are to be kept in the default location, a `__snapshots__` subdirectory
     
-### Chimp
-* Install chimp globally
-    - this prevents an in issue sometimes arising when deploying to galaxy (an error installing chromedriver)
-    - also, as of 10/19/17, yarn was failing on chimp install (so easier to install globally using 'npm')
-* Continuous Integration
-    - in order for all test tiers to succeed, it 'seemed' a pause of around 5 seconds was needed between the integration and end-to-end tests. Else, the end-to-end test would get random failures (timeouts, elements not found)
-* NOTE (strange behavior):
-    - when searching two times in a row in a test, for an element that is wrapped in a createContainer, the second search may fail
-        + e.g. waitForExist(someButton), then click(someButton) may result in an 'element not found on page' error on the click call
-
 ## Storybook
 * Story file location and naming convention
     - story file names are to follow the convetion `filename.stories.js`
