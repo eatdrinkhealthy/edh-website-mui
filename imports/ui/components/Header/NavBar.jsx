@@ -3,6 +3,14 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 
+const pathAndHash = (match, location, toHash) => {
+  if (!match) {
+    return false;
+  }
+
+  return match.url === location.pathname && toHash === location.hash;
+};
+
 const styles = theme => ({
   container: {
     // margin: "5px 0 5px 0",
@@ -22,17 +30,32 @@ const NavBar = ({ classes: { container, selected } }) => (
   <nav className={container}>
     <ul>
       <li>
-        <NavLink exact to="/" activeClassName={selected}>
+        <NavLink
+          exact
+          to="/"
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "")}
+        >
           HOME
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="/#contact" activeClassName={selected}>
+        <NavLink
+          exact
+          to={{ pathname: "/", hash: "#contact" }}
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "#contact")}
+        >
           CONTACT
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="/privacy-policy" activeClassName={selected}>
+        <NavLink
+          exact
+          to="/privacy-policy"
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "")}
+        >
           PRIVACY
         </NavLink>
       </li>
