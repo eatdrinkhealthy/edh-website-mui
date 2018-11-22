@@ -9,15 +9,19 @@ import NavBar from "./NavBar";
 import IconButtons from "./IconButtons";
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1,
-  },
   appBar: {
     borderBottom: `8px solid ${theme.palette.primary.main}`,
     boxShadow: "none",
   },
   toolBar: {
     backgroundColor: "white",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "center",
+    },
   },
 });
 
@@ -27,15 +31,13 @@ const Header = props => {
 
   return (
     <Fragment>
-      <div className={classes.root}>
-        <AppBar position="static" className={classes.appBar}>
-          <Toolbar className={classes.toolBar}>
-            <Logo />
-            <NavBar />
-            <IconButtons />
-          </Toolbar>
-        </AppBar>
-      </div>
+      <AppBar position="static" className={classes.appBar}>
+        <Toolbar className={classes.toolBar}>
+          <Logo />
+          <NavBar />
+          <IconButtons />
+        </Toolbar>
+      </AppBar>
     </Fragment>
   );
 };
