@@ -7,7 +7,7 @@ import Content from "../Content";
 
 describe("<Content />", () => {
   it("should match render snapshot", () => {
-    const tree = renderer.create(<Content />);
+    const tree = renderer.create(<Content />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

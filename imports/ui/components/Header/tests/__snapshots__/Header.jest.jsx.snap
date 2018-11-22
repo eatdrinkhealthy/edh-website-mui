@@ -27,13 +27,33 @@ exports[`<Header /> should match render snapshot 1`] = `
       >
         <ul>
           <li>
-            HOME
+            <a
+              aria-current="page"
+              className="NavBar-selected-46"
+              href="/"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              HOME
+            </a>
           </li>
           <li>
-            CONTACT
+            <a
+              aria-current={null}
+              href="/#contact"
+              onClick={[Function]}
+            >
+              CONTACT
+            </a>
           </li>
           <li>
-            PRIVACY
+            <a
+              aria-current={null}
+              href="/privacy-policy"
+              onClick={[Function]}
+            >
+              PRIVACY
+            </a>
           </li>
         </ul>
       </nav>

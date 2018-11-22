@@ -1,11 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Content /> should match render snapshot 1`] = `
-<div
-  className="Content-container-1"
->
-  <p>
-    This is your content.
-  </p>
+<div>
+  <div
+    className="Content-section-1"
+    id="home"
+  >
+    Home
+  </div>
+  <div
+    className="Content-section-1"
+    id="contact"
+  >
+    Contact
+  </div>
 </div>
 `;

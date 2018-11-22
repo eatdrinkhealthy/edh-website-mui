@@ -7,7 +7,7 @@ import App from "../App";
 
 describe("<App />", function() {
   it("matches render snapshot", function() {
-    const tree = renderer.create(<App />);
+    const tree = renderer.create(<App />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
