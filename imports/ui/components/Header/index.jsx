@@ -6,6 +6,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
+import IconButtons from "./IconButtons";
 
 const styles = theme => ({
   root: {
@@ -31,6 +32,7 @@ const Header = props => {
           <Toolbar className={classes.toolBar}>
             <Logo />
             <NavBar />
+            <IconButtons />
           </Toolbar>
         </AppBar>
       </div>

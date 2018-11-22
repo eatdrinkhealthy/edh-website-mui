@@ -26,3 +26,19 @@ nav ul li a {
 nav ul li a:hover {
   color: #999;
 }
+
+
+/* IconButtons Styling */
+.icon-buttons {
+  font-size: .7em;
+  padding-top: 1em;
+}
+
+.icon-buttons a {
+  color: #444;
+  padding: 1em;
+}
+
+.icon-buttons a:hover {
+  color: #f28020;
+}
