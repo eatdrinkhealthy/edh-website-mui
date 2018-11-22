@@ -24,9 +24,6 @@ const Content = props => {
       <div id="contact" className={section}>
         Contact
       </div>
-      <div id="privacy" className={section}>
-        Privacy
-      </div>
     </div>
   );
 };

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrivacyPolicy /> should match render snapshot 1`] = `
+<div
+  className="PrivacyPolicy-container-1"
+>
+  <h4
+    className="MuiTypography-root-3 MuiTypography-h4-18 PrivacyPolicy-message-2"
+  >
+    Privacy Policy.
+  </h4>
+</div>
+`;

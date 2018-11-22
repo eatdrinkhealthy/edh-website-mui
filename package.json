@@ -7,7 +7,7 @@
     "test": "npm run unit-test",
     "unit-test": "jest -c .jest-config.json",
     "update-snapshots": "jest -c .jest-config.json --updateSnapshot",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -s ./public -p 9001 -c .storybook"
   },
   "dependencies": {
     "@material-ui/core": "^3.5.1",
@@ -15,11 +15,12 @@
     "meteor-node-stubs": "^0.4.1",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
-    "@storybook/react": "^4.0.7",
+    "@storybook/react": "^4.0.8",
     "babel-eslint": "^8.2.6",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",

@@ -1,24 +1,63 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = {
+const pathAndHash = (match, location, toHash) => {
+  if (!match) {
+    return false;
+  }
+
+  return match.url === location.pathname && toHash === location.hash;
+};
+
+const styles = theme => ({
   container: {
     // margin: "5px 0 5px 0",
   },
-};
+  selected: {
+    color: theme.palette.primary.main,
+    "&:hover": {
+      color: theme.palette.primary.main,
+    },
+  },
+});
 
-const NavBar = ({ classes: { container } }) => (
+// TODO: to set an anchor link active, could check location.hash
+// if equal, set Contact to active
+// Note, may need to use Link instead of NavLink to do so
+const NavBar = ({ classes: { container, selected } }) => (
   <nav className={container}>
     <ul>
       <li>
-        <a href="#home">HOME</a>
+        <NavLink
+          exact
+          to="/"
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "")}
+        >
+          HOME
+        </NavLink>
       </li>
       <li>
-        <a href="#contact">CONTACT</a>
+        <NavLink
+          exact
+          to={{ pathname: "/", hash: "#contact" }}
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "#contact")}
+        >
+          CONTACT
+        </NavLink>
       </li>
       <li>
-        <a href="#privacy">PRIVACY</a>
+        <NavLink
+          exact
+          to="/privacy-policy"
+          activeClassName={selected}
+          isActive={(m, l) => pathAndHash(m, l, "")}
+        >
+          PRIVACY
+        </NavLink>
       </li>
     </ul>
   </nav>

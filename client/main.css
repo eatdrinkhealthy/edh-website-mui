@@ -1,7 +1,6 @@
-/* CSS declarations go here. */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 /* set default font */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 * {
   font-family: Lato;
@@ -17,4 +16,13 @@ nav ul {
 nav ul li {
   display: inline;
   margin: 0 15px 0 15px;
+}
+
+nav ul li a {
+  color: #444;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #999;
 }

@@ -3,11 +3,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import renderer from "react-test-renderer";
-import Content from "../Content";
+import PrivacyPolicy from "../PrivacyPolicy";
 
-describe("<Content />", () => {
+describe("<PrivacyPolicy />", () => {
   it("should match render snapshot", () => {
-    const tree = renderer.create(<Content />).toJSON();
+    const tree = renderer.create(<PrivacyPolicy />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
