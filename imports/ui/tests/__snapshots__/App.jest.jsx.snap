@@ -84,47 +84,44 @@ exports[`<App /> matches render snapshot 1`] = `
     </div>
   </header>
   <div>
-    <header
-      className="app-header"
+    <section
+      className="banner-container"
     >
-      <section
-        className="app-header__banner"
+      <div
+        className="banner-headline"
       >
-        <div
-          className="app-header__banner-content-wrapper"
+        A platform to find, share, and discuss healthy places to shop and eat.
+      </div>
+      <a
+        className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-fab-62 MuiButton-extendedFab-63 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 Banner-bannerButton-44"
+        href="https://app.eatdrinkhealthy.co/"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        rel="noopener noreferrer"
+        role="button"
+        tabIndex="0"
+        target="_blank"
+      >
+        <span
+          className="MuiButton-label-46"
         >
-          <div
-            className="row"
-          >
-            <div
-              className="column medium-8 large-7"
-            >
-              <div
-                className="app-header__banner-headline"
-              >
-                A platform to find, share, and discuss healthy places to shop and eat.
-              </div>
-              <div
-                className="app-header__banner-buttons"
-              >
-                <a
-                  className="button button--wep-app"
-                  href="https://app.eatdrinkhealthy.co/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <span>
-                    Web App
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
+          Web App
+        </span>
+        <span
+          className="MuiTouchRipple-root-75"
+        />
+      </a>
+    </section>
     <div
-      className="Content-section-44"
+      className="Contact-section-74"
       id="contact"
     >
       Contact
