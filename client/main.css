@@ -96,3 +96,29 @@ nav > a:hover {
 
 /* Banner Styling */
 
+.banner-container {
+  background-image: url("/images/blueberry_smoothie_sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 620px;
+  border-bottom: 8px solid #f28020;
+}
+
+.banner-headline {
+  color: #fff;
+  font-size: 3.25em;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: .5em;
+}
+
+@media all and (max-width:1024px) {
+  .banner-container {
+    height: 400px;
+  }
+
+  .banner-headline {
+    font-size: 1.75
+  }
+}
