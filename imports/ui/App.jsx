@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PageNotFound from "./components/PageNotFound";
 
@@ -21,6 +22,8 @@ export default class App extends Component {
             <Route path="/privacy-policy" component={PrivacyPolicy} />
             <Route component={PageNotFound} />
           </Switch>
+
+          <Footer />
         </div>
       </Router>
     );

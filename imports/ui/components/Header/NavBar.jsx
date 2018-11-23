@@ -12,9 +12,6 @@ const pathAndHash = (match, location, toHash) => {
 };
 
 const styles = theme => ({
-  container: {
-    // margin: "5px 0 5px 0",
-  },
   selected: {
     color: theme.palette.primary.main,
     "&:hover": {
@@ -26,40 +23,32 @@ const styles = theme => ({
 // TODO: to set an anchor link active, could check location.hash
 // if equal, set Contact to active
 // Note, may need to use Link instead of NavLink to do so
-const NavBar = ({ classes: { container, selected } }) => (
-  <nav className={container}>
-    <ul>
-      <li>
-        <NavLink
-          exact
-          to="/"
-          activeClassName={selected}
-          isActive={(m, l) => pathAndHash(m, l, "")}
-        >
-          HOME
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          exact
-          to={{ pathname: "/", hash: "#contact" }}
-          activeClassName={selected}
-          isActive={(m, l) => pathAndHash(m, l, "#contact")}
-        >
-          CONTACT
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          exact
-          to="/privacy-policy"
-          activeClassName={selected}
-          isActive={(m, l) => pathAndHash(m, l, "")}
-        >
-          PRIVACY
-        </NavLink>
-      </li>
-    </ul>
+const NavBar = ({ classes: { selected } }) => (
+  <nav className="header-container header-middle">
+    <NavLink
+      exact
+      to="/"
+      activeClassName={selected}
+      isActive={(m, l) => pathAndHash(m, l, "")}
+    >
+      HOME
+    </NavLink>
+    <NavLink
+      exact
+      to={{ pathname: "/", hash: "#contact" }}
+      activeClassName={selected}
+      isActive={(m, l) => pathAndHash(m, l, "#contact")}
+    >
+      CONTACT
+    </NavLink>
+    <NavLink
+      exact
+      to="/privacy-policy"
+      activeClassName={selected}
+      isActive={(m, l) => pathAndHash(m, l, "")}
+    >
+      PRIVACY
+    </NavLink>
   </nav>
 );
 
