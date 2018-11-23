@@ -34,15 +34,24 @@ exports[`<Content /> should match render snapshot 1`] = `
         Web App
       </span>
       <span
-        className="MuiTouchRipple-root-32"
+        className="MuiTouchRipple-root-34"
       />
     </a>
   </section>
   <div
-    className="Contact-section-31"
+    className="Contact-container-31"
     id="contact"
   >
-    Contact
+    <span
+      className="Contact-image-32"
+    >
+      Image
+    </span>
+    <span
+      className="Contact-form-33"
+    >
+      Form
+    </span>
   </div>
 </div>
 `;
