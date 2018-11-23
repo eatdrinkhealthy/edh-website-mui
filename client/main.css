@@ -103,6 +103,8 @@ nav > a:hover {
   background-position: 50% 50%;
   height: 620px;
   border-bottom: 8px solid #f28020;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-headline {
@@ -110,7 +112,14 @@ nav > a:hover {
   font-size: 3.25em;
   font-weight: bold;
   line-height: 1;
-  margin-bottom: .5em;
+  margin: 10px 5% .5em 5%;
+}
+
+.banner-button {
+  color: white;
+  font-weight: bold;
+  width: 140px;
+  margin-left: 5%;
 }
 
 @media all and (max-width:1024px) {
@@ -119,6 +128,13 @@ nav > a:hover {
   }
 
   .banner-headline {
-    font-size: 1.75
+    font-size: 1.75em;
+  }
+
+  .banner-button {
+    font-weight: normal;
+    width: 110px;
+    height: .8em;
   }
 }
+

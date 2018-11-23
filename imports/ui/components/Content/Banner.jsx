@@ -1,7 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
-import { withStyles } from "@material-ui/core/styles";
 
 /* eslint-disable jsx-a11y/anchor-has-content */
 
@@ -14,15 +12,7 @@ const MyLink = props => (
   />
 );
 
-const styles = {
-  bannerButton: {
-    color: "white",
-    fontWeight: "bold",
-    width: "140px",
-  },
-};
-
-const Banner = ({ classes: { bannerButton } }) => (
+const Banner = () => (
   <section className="banner-container">
     <div className="banner-headline">
       A platform to find, share, and discuss healthy places to shop and eat.
@@ -30,7 +20,7 @@ const Banner = ({ classes: { bannerButton } }) => (
     <Button
       variant="extendedFab"
       color="primary"
-      className={bannerButton}
+      className="banner-button"
       component={MyLink}
     >
       Web App
@@ -38,8 +28,4 @@ const Banner = ({ classes: { bannerButton } }) => (
   </section>
 );
 
-Banner.propTypes = {
-  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-};
-
-export default withStyles(styles)(Banner);
+export default Banner;
