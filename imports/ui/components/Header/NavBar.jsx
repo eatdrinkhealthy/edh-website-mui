@@ -26,7 +26,6 @@ const styles = theme => ({
 const NavBar = ({ classes: { selected } }) => (
   <nav className="header-container header-middle">
     <NavLink
-      className="nav-link"
       exact
       to="/"
       activeClassName={selected}
@@ -35,7 +34,6 @@ const NavBar = ({ classes: { selected } }) => (
       HOME
     </NavLink>
     <NavLink
-      className="nav-link"
       exact
       to={{ pathname: "/", hash: "#contact" }}
       activeClassName={selected}
@@ -44,7 +42,6 @@ const NavBar = ({ classes: { selected } }) => (
       CONTACT
     </NavLink>
     <NavLink
-      className="nav-link"
       exact
       to="/privacy-policy"
       activeClassName={selected}

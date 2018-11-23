@@ -9,10 +9,9 @@
 /* Header Styling */
 .header-container {
   width: 280px;
-  height: 100px;
+  margin: 2px;
   display: flex;
   align-items: center;
-  background-color: green;
 }
 
 .header-left {
@@ -20,21 +19,32 @@
 }
 
 .header-middle {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header-right {
   justify-content: flex-end;
 }
 
-/* NavBar Styling */
+@media all and (max-width:899px) {
+  .header-left {
+    justify-content: space-around;
+  }
 
-.nav-link {
-  color: #444;
-  text-decoration: none;
+  .header-right {
+    justify-content: space-around;
+  }
 }
 
-.nav-link:hover {
+/* NavBar Styling */
+
+nav > a {
+  color: #444;
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+nav > a:hover {
   color: #999;
 }
 
@@ -42,7 +52,7 @@
 /* IconButtons Styling */
 .icon-buttons {
   font-size: .7em;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 
 .icon-buttons a {

@@ -1,7 +1,7 @@
 import React from "react";
 
 const IconButtons = () => (
-  <div className="icon-buttons">
+  <div className="header-container header-right icon-buttons">
     <a href="mailto:info@eatdrinkhealthy.co">
       <span className="fa-stack fa-lg">
         <i className="fa fa-circle fa-stack-2x" />

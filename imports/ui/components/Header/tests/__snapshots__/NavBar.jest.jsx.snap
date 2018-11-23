@@ -2,38 +2,30 @@
 
 exports[`<NavBar /> should match render snapshot 1`] = `
 <nav
-  className="NavBar-container-1"
+  className="header-container header-middle"
 >
-  <ul>
-    <li>
-      <a
-        aria-current="page"
-        className="NavBar-selected-2"
-        href="/"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        HOME
-      </a>
-    </li>
-    <li>
-      <a
-        aria-current={null}
-        href="/#contact"
-        onClick={[Function]}
-      >
-        CONTACT
-      </a>
-    </li>
-    <li>
-      <a
-        aria-current={null}
-        href="/privacy-policy"
-        onClick={[Function]}
-      >
-        PRIVACY
-      </a>
-    </li>
-  </ul>
+  <a
+    aria-current="page"
+    className="NavBar-selected-1"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    HOME
+  </a>
+  <a
+    aria-current={null}
+    href="/#contact"
+    onClick={[Function]}
+  >
+    CONTACT
+  </a>
+  <a
+    aria-current={null}
+    href="/privacy-policy"
+    onClick={[Function]}
+  >
+    PRIVACY
+  </a>
 </nav>
 `;

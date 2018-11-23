@@ -9,7 +9,7 @@ exports[`<App /> matches render snapshot 1`] = `
       className="MuiToolbar-root-39 MuiToolbar-regular-41 MuiToolbar-gutters-40 Header-toolBar-2"
     >
       <div
-        className="Logo-container-43"
+        className="header-container header-left"
       >
         <a
           href="/"
@@ -21,42 +21,34 @@ exports[`<App /> matches render snapshot 1`] = `
         </a>
       </div>
       <nav
-        className="NavBar-container-44"
+        className="header-container header-middle"
       >
-        <ul>
-          <li>
-            <a
-              aria-current="page"
-              className="NavBar-selected-45"
-              href="/"
-              onClick={[Function]}
-              style={Object {}}
-            >
-              HOME
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current={null}
-              href="/#contact"
-              onClick={[Function]}
-            >
-              CONTACT
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current={null}
-              href="/privacy-policy"
-              onClick={[Function]}
-            >
-              PRIVACY
-            </a>
-          </li>
-        </ul>
+        <a
+          aria-current="page"
+          className="NavBar-selected-43"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          HOME
+        </a>
+        <a
+          aria-current={null}
+          href="/#contact"
+          onClick={[Function]}
+        >
+          CONTACT
+        </a>
+        <a
+          aria-current={null}
+          href="/privacy-policy"
+          onClick={[Function]}
+        >
+          PRIVACY
+        </a>
       </nav>
       <div
-        className="icon-buttons"
+        className="header-container header-right icon-buttons"
       >
         <a
           href="mailto:info@eatdrinkhealthy.co"
@@ -93,13 +85,13 @@ exports[`<App /> matches render snapshot 1`] = `
   </header>
   <div>
     <div
-      className="Content-section-46"
+      className="Content-section-44"
       id="home"
     >
       Home
     </div>
     <div
-      className="Content-section-46"
+      className="Content-section-44"
       id="contact"
     >
       Contact
