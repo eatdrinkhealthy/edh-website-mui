@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import Banner from "./Banner";
 
 const styles = {
   section: {
@@ -18,9 +19,7 @@ const Content = props => {
 
   return (
     <div>
-      <div id="home" className={section}>
-        Home
-      </div>
+      <Banner />
       <div id="contact" className={section}>
         Contact
       </div>

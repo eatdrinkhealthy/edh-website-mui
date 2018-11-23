@@ -84,12 +84,45 @@ exports[`<App /> matches render snapshot 1`] = `
     </div>
   </header>
   <div>
-    <div
-      className="Content-section-44"
-      id="home"
+    <header
+      className="app-header"
     >
-      Home
-    </div>
+      <section
+        className="app-header__banner"
+      >
+        <div
+          className="app-header__banner-content-wrapper"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="column medium-8 large-7"
+            >
+              <div
+                className="app-header__banner-headline"
+              >
+                A platform to find, share, and discuss healthy places to shop and eat.
+              </div>
+              <div
+                className="app-header__banner-buttons"
+              >
+                <a
+                  className="button button--wep-app"
+                  href="https://app.eatdrinkhealthy.co/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <span>
+                    Web App
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <div
       className="Content-section-44"
       id="contact"
