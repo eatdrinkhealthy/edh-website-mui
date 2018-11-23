@@ -6,24 +6,35 @@
   font-family: Lato;
 }
 
+/* Header Styling */
+.header-container {
+  width: 280px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: green;
+}
+
+.header-left {
+  justify-content: flex-start;
+}
+
+.header-middle {
+  justify-content: space-between;
+}
+
+.header-right {
+  justify-content: flex-end;
+}
 
 /* NavBar Styling */
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px 0 15px;
-}
-
-nav ul li a {
+.nav-link {
   color: #444;
   text-decoration: none;
 }
 
-nav ul li a:hover {
+.nav-link:hover {
   color: #999;
 }
 
