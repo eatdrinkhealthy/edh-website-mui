@@ -4,14 +4,14 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
 import renderer from "react-test-renderer";
-import Header from "../index";
+import MenuBar from "../index";
 
-describe("<Header />", () => {
+describe("<MenuBar />", () => {
   it("should match render snapshot", () => {
     const tree = renderer
       .create(
         <MemoryRouter>
-          <Header />
+          <MenuBar />
         </MemoryRouter>,
       )
       .toJSON();

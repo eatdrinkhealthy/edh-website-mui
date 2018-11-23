@@ -1,8 +1,8 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
 import { storiesOf } from "@storybook/react";
-import Header from "../..";
+import MenuBar from "../..";
 
 storiesOf("Components", module)
   .addDecorator(story => <MemoryRouter>{story()}</MemoryRouter>)
-  .add("Header", () => <Header />);
+  .add("MenuBar", () => <MenuBar />);

@@ -6,32 +6,32 @@
   font-family: Lato;
 }
 
-/* Header Styling */
-.header-container {
+/* MenuBar Styling */
+.menubar-container {
   width: 280px;
   margin: 2px;
   display: flex;
   align-items: center;
 }
 
-.header-left {
+.menubar-left {
   justify-content: flex-start;
 }
 
-.header-middle {
+.menubar-middle {
   justify-content: space-around;
 }
 
-.header-right {
+.menubar-right {
   justify-content: flex-end;
 }
 
 @media all and (max-width:899px) {
-  .header-left {
+  .menubar-left {
     justify-content: space-around;
   }
 
-  .header-right {
+  .menubar-right {
     justify-content: space-around;
   }
 }

@@ -24,7 +24,7 @@ const styles = theme => ({
 // if equal, set Contact to active
 // Note, may need to use Link instead of NavLink to do so
 const NavBar = ({ classes: { selected } }) => (
-  <nav className="header-container header-middle">
+  <nav className="menubar-container menubar-middle">
     <NavLink
       exact
       to="/"

@@ -3,13 +3,13 @@
 exports[`<App /> matches render snapshot 1`] = `
 <div>
   <header
-    className="MuiPaper-root-12 MuiPaper-elevation4-18 MuiAppBar-root-3 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-10 Header-appBar-1"
+    className="MuiPaper-root-12 MuiPaper-elevation4-18 MuiAppBar-root-3 MuiAppBar-positionStatic-7 MuiAppBar-colorPrimary-10 MenuBar-appBar-1"
   >
     <div
-      className="MuiToolbar-root-39 MuiToolbar-regular-41 MuiToolbar-gutters-40 Header-toolBar-2"
+      className="MuiToolbar-root-39 MuiToolbar-regular-41 MuiToolbar-gutters-40 MenuBar-toolBar-2"
     >
       <div
-        className="header-container header-left"
+        className="menubar-container menubar-left"
       >
         <a
           href="/"
@@ -21,7 +21,7 @@ exports[`<App /> matches render snapshot 1`] = `
         </a>
       </div>
       <nav
-        className="header-container header-middle"
+        className="menubar-container menubar-middle"
       >
         <a
           aria-current="page"
@@ -48,7 +48,7 @@ exports[`<App /> matches render snapshot 1`] = `
         </a>
       </nav>
       <div
-        className="header-container header-right icon-buttons"
+        className="menubar-container menubar-right icon-buttons"
       >
         <a
           href="mailto:info@eatdrinkhealthy.co"

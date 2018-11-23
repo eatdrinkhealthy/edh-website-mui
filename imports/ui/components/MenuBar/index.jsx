@@ -26,7 +26,7 @@ const styles = theme => ({
 });
 
 // App component - represents the whole app
-const Header = props => {
+const MenuBar = props => {
   const { classes } = props;
 
   return (
@@ -42,8 +42,8 @@ const Header = props => {
   );
 };
 
-Header.propTypes = {
+MenuBar.propTypes = {
   classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(MenuBar);

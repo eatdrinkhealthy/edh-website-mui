@@ -1,7 +1,7 @@
 /* eslint-disable arrow-parens, object-curly-newline */
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./components/Header";
+import MenuBar from "./components/MenuBar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <Router>
         <div>
-          <Header />
+          <MenuBar />
 
           <Switch>
             <Route exact path="/" component={Content} />
