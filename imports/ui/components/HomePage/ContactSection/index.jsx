@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 
 const styles = {
   container: {
-    padding: "8px",
+    padding: "40px",
   },
   responsive: {
     maxWidth: "100%",
