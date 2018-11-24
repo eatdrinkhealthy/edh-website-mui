@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Content /> should match render snapshot 1`] = `
+exports[`<HomePage /> should match render snapshot 1`] = `
 <div>
   <section
     className="banner-container"
@@ -34,23 +34,27 @@ exports[`<Content /> should match render snapshot 1`] = `
         Web App
       </span>
       <span
-        className="MuiTouchRipple-root-34"
+        className="MuiTouchRipple-root-35"
       />
     </a>
   </section>
   <div
-    className="Contact-container-31"
+    className="ContactSection-container-31"
     id="contact"
   >
-    <span
-      className="Contact-image-32"
+    <div
+      className="MobileImage-root-32"
     >
-      Image
-    </span>
+      <span
+        className="MobileImage-image-33"
+      >
+        Mobile Image
+      </span>
+    </div>
     <span
-      className="Contact-form-33"
+      className="ContactForm-form-34"
     >
-      Form
+      Contact Form
     </span>
   </div>
 </div>

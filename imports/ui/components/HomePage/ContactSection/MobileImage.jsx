@@ -3,19 +3,23 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
+  root: {},
   image: {
     border: "1px dashed blue",
-    width: "80px",
     textAlign: "center",
   },
 };
 
 const MobileImage = props => {
   const {
-    classes: { image },
+    classes: { root, image },
   } = props;
 
-  return <span className={image}>Mobile Image</span>;
+  return (
+    <div className={root}>
+      <span className={image}>Mobile Image</span>
+    </div>
+  );
 };
 
 MobileImage.propTypes = {

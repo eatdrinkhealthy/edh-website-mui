@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MenuBar from "./components/MenuBar";
-import Content from "./components/Content";
+import HomePage from "./components/HomePage";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import PageNotFound from "./components/PageNotFound";
@@ -18,7 +18,7 @@ export default class App extends Component {
           <MenuBar />
 
           <Switch>
-            <Route exact path="/" component={Content} />
+            <Route exact path="/" component={HomePage} />
             <Route path="/privacy-policy" component={PrivacyPolicy} />
             <Route component={PageNotFound} />
           </Switch>

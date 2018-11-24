@@ -3,11 +3,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
 import renderer from "react-test-renderer";
-import Content from "..";
+import HomePage from "..";
 
-describe("<Content />", () => {
+describe("<HomePage />", () => {
   it("should match render snapshot", () => {
-    const tree = renderer.create(<Content />).toJSON();
+    const tree = renderer.create(<HomePage />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -5,7 +5,6 @@ import { withStyles } from "@material-ui/core/styles";
 const styles = {
   form: {
     border: "1px dashed green",
-    width: "80px",
     textAlign: "center",
   },
 };

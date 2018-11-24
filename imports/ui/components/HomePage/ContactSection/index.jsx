@@ -15,16 +15,11 @@ const styles = {
     justifyContent: "space-evenly",
     alignItems: "center",
   },
-  form: {
-    border: "1px dashed green",
-    width: "80px",
-    textAlign: "center",
-  },
 };
 
-const Contact = props => {
+const ContactSection = props => {
   const {
-    classes: { container, form },
+    classes: { container },
   } = props;
 
   return (
@@ -35,8 +30,8 @@ const Contact = props => {
   );
 };
 
-Contact.propTypes = {
+ContactSection.propTypes = {
   classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
 };
 
-export default withStyles(styles)(Contact);
+export default withStyles(styles)(ContactSection);
