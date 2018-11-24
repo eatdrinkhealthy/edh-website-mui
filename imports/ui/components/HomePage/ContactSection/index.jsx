@@ -20,7 +20,7 @@ const ContactSection = props => {
   } = props;
 
   return (
-    <Grid container spacing={24} className={container}>
+    <Grid container spacing={40} className={container}>
       <Grid item xs={12} md={6}>
         <img src="images/device.png" alt="Mobile Phone Device" className={responsive} />
       </Grid>

@@ -1,6 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Field, reduxForm } from "redux-form";
+import TextField from "@material-ui/core/TextField";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
 
 const required = value => (value ? undefined : "Required field.");
 
@@ -18,17 +22,17 @@ const maxLength40 = value =>
 const maxLength500 = value =>
   value && value.length > 500 ? "Must not have more than 500 characters." : undefined;
 
-/* eslint-disable jsx-a11y/label-has-for */
-const renderInput = ({ input, label, type, meta: { touched, error } }) => (
-  <div>
-    <label htmlFor={input.name}>{label}</label>
-    <input {...input} id={input.name} component="input" type={type} />
-    {touched && error && (
-      <span id={`${input.name}Error`} className="form-error is-visible">
-        {error}
-      </span>
-    )}
-  </div>
+const renderInput = ({ input, label, meta: { touched, error }, ...custom }) => (
+  <TextField
+    fullWidth
+    style={{ margin: "10px 0 10px 0" }}
+    error={touched && !!error}
+    helperText={touched && error}
+    variant="outlined"
+    label={label}
+    {...input}
+    {...custom}
+  />
 );
 
 renderInput.propTypes = {
@@ -37,43 +41,32 @@ renderInput.propTypes = {
     value: PropTypes.string.isRequired,
   }).isRequired, // eslint-disable-line react/forbid-prop-types
   label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string, // eslint-disable-line react/require-default-props
   meta: PropTypes.shape({
     touched: PropTypes.bool.isRequired,
     error: PropTypes.string,
   }).isRequired,
 };
 
-const renderTextarea = ({ input, label, meta: { touched, error } }) => (
-  <div>
-    <label htmlFor={input.name}>{label}</label>
-    <textarea {...input} id={input.name} cols="10" rows="50" />
-    {touched && error && (
-      <span id={`${input.name}Error`} className="form-error is-visible">
-        {error}
-      </span>
-    )}
-  </div>
-);
-
-renderTextarea.propTypes = {
-  input: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-  }).isRequired, // eslint-disable-line react/forbid-prop-types
-  label: PropTypes.string.isRequired,
-  meta: PropTypes.shape({
-    touched: PropTypes.bool.isRequired,
-    error: PropTypes.string,
-  }).isRequired,
+const styles = {
+  formButton: {
+    color: "white",
+    fontWeight: "bold",
+    float: "right",
+  },
 };
-/* eslint-enable jsx-a11y/label-has-for */
 
 const ContactFormComponent = props => {
-  const { handleSubmit } = props;
+  const {
+    handleSubmit,
+    classes: { formButton },
+  } = props;
 
   return (
     <div>
-      <h2>Contact Us</h2>
+      <Typography variant="h4" color="primary">
+        Contact Us
+      </Typography>
       <form id="contactForm" onSubmit={handleSubmit}>
         <Field
           name="contactName"
@@ -94,13 +87,22 @@ const ContactFormComponent = props => {
         <Field
           name="contactMessage"
           label="Message"
-          component={renderTextarea}
+          multiline
+          rows={10}
+          component={renderInput}
           validate={[required, minLength2, maxLength500]}
         />
 
-        <button id="contactSubmit" type="submit" className="button button--submit">
+        <Button
+          id="contactSubmit"
+          className={formButton}
+          type="submit"
+          size="large"
+          variant="extendedFab"
+          color="primary"
+        >
           Send
-        </button>
+        </Button>
       </form>
     </div>
   );
@@ -132,6 +134,6 @@ const onSubmitSuccess = (result, dispatch, props) => {
 const ContactForm = reduxForm({
   form: "contactForm",
   onSubmitSuccess,
-})(ContactFormComponent);
+})(withStyles(styles)(ContactFormComponent));
 
 export default ContactForm;

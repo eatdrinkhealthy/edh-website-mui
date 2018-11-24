@@ -116,12 +116,12 @@ exports[`<App /> matches render snapshot 1`] = `
           Web App
         </span>
         <span
-          className="MuiTouchRipple-root-173"
+          className="MuiTouchRipple-root-263"
         />
       </a>
     </section>
     <div
-      className="MuiGrid-container-76 MuiGrid-spacing-xs-24-100 ContactSection-container-74"
+      className="MuiGrid-container-76 MuiGrid-spacing-xs-40-102 ContactSection-container-74"
     >
       <div
         className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
@@ -136,76 +136,220 @@ exports[`<App /> matches render snapshot 1`] = `
         className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
       >
         <div>
-          <h2>
+          <h4
+            className="MuiTypography-root-174 MuiTypography-h4-189 MuiTypography-colorPrimary-204"
+          >
             Contact Us
-          </h2>
+          </h4>
           <form
             id="contactForm"
             onSubmit={[Function]}
           >
-            <div>
+            <div
+              className="MuiFormControl-root-209 MuiFormControl-fullWidth-212"
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              style={
+                Object {
+                  "margin": "10px 0 10px 0",
+                }
+              }
+            >
               <label
-                htmlFor="contactName"
+                className="MuiFormLabel-root-224 MuiInputLabel-root-213 MuiInputLabel-formControl-218 MuiInputLabel-animated-221 MuiInputLabel-outlined-223"
+                data-shrink={false}
               >
                 Name
               </label>
-              <input
-                component="input"
-                id="contactName"
-                name="contactName"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onDragStart={[Function]}
-                onDrop={[Function]}
-                onFocus={[Function]}
-                type="text"
-                value=""
-              />
+              <div
+                className="MuiInputBase-root-244 MuiOutlinedInput-root-231 MuiInputBase-fullWidth-253 MuiInputBase-formControl-245"
+                onClick={[Function]}
+              >
+                <fieldset
+                  aria-hidden={true}
+                  className="MuiPrivateNotchedOutline-root-261 MuiOutlinedInput-notchedOutline-238"
+                  style={
+                    Object {
+                      "paddingLeft": 8,
+                    }
+                  }
+                >
+                  <legend
+                    className="MuiPrivateNotchedOutline-legend-262"
+                    style={
+                      Object {
+                        "width": 0.01,
+                      }
+                    }
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </legend>
+                </fieldset>
+                <input
+                  aria-invalid={false}
+                  className="MuiInputBase-input-254 MuiOutlinedInput-input-239"
+                  disabled={false}
+                  name="contactName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={false}
+                  type="text"
+                  value=""
+                />
+              </div>
             </div>
-            <div>
+            <div
+              className="MuiFormControl-root-209 MuiFormControl-fullWidth-212"
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              style={
+                Object {
+                  "margin": "10px 0 10px 0",
+                }
+              }
+            >
               <label
-                htmlFor="contactEmail"
+                className="MuiFormLabel-root-224 MuiInputLabel-root-213 MuiInputLabel-formControl-218 MuiInputLabel-animated-221 MuiInputLabel-outlined-223"
+                data-shrink={false}
               >
                 Email
               </label>
-              <input
-                component="input"
-                id="contactEmail"
-                name="contactEmail"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onDragStart={[Function]}
-                onDrop={[Function]}
-                onFocus={[Function]}
-                type="email"
-                value=""
-              />
+              <div
+                className="MuiInputBase-root-244 MuiOutlinedInput-root-231 MuiInputBase-fullWidth-253 MuiInputBase-formControl-245"
+                onClick={[Function]}
+              >
+                <fieldset
+                  aria-hidden={true}
+                  className="MuiPrivateNotchedOutline-root-261 MuiOutlinedInput-notchedOutline-238"
+                  style={
+                    Object {
+                      "paddingLeft": 8,
+                    }
+                  }
+                >
+                  <legend
+                    className="MuiPrivateNotchedOutline-legend-262"
+                    style={
+                      Object {
+                        "width": 0.01,
+                      }
+                    }
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </legend>
+                </fieldset>
+                <input
+                  aria-invalid={false}
+                  className="MuiInputBase-input-254 MuiOutlinedInput-input-239 MuiInputBase-inputType-257"
+                  disabled={false}
+                  name="contactEmail"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={false}
+                  type="email"
+                  value=""
+                />
+              </div>
             </div>
-            <div>
+            <div
+              className="MuiFormControl-root-209 MuiFormControl-fullWidth-212"
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              style={
+                Object {
+                  "margin": "10px 0 10px 0",
+                }
+              }
+            >
               <label
-                htmlFor="contactMessage"
+                className="MuiFormLabel-root-224 MuiInputLabel-root-213 MuiInputLabel-formControl-218 MuiInputLabel-animated-221 MuiInputLabel-outlined-223"
+                data-shrink={false}
               >
                 Message
               </label>
-              <textarea
-                cols="10"
-                id="contactMessage"
-                name="contactMessage"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onDragStart={[Function]}
-                onDrop={[Function]}
-                onFocus={[Function]}
-                rows="50"
-                value=""
-              />
+              <div
+                className="MuiInputBase-root-244 MuiOutlinedInput-root-231 MuiInputBase-fullWidth-253 MuiInputBase-formControl-245 MuiInputBase-multiline-252 MuiOutlinedInput-multiline-237"
+                onClick={[Function]}
+              >
+                <fieldset
+                  aria-hidden={true}
+                  className="MuiPrivateNotchedOutline-root-261 MuiOutlinedInput-notchedOutline-238"
+                  style={
+                    Object {
+                      "paddingLeft": 8,
+                    }
+                  }
+                >
+                  <legend
+                    className="MuiPrivateNotchedOutline-legend-262"
+                    style={
+                      Object {
+                        "width": 0.01,
+                      }
+                    }
+                  >
+                    <span
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "&#8203;",
+                        }
+                      }
+                    />
+                  </legend>
+                </fieldset>
+                <textarea
+                  aria-invalid={false}
+                  className="MuiInputBase-input-254 MuiOutlinedInput-input-239 MuiInputBase-inputMultiline-256 MuiOutlinedInput-inputMultiline-241"
+                  disabled={false}
+                  name="contactMessage"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={false}
+                  rows={10}
+                  value=""
+                />
+              </div>
             </div>
             <button
-              className="button button--submit"
+              className="MuiButtonBase-root-71 MuiButton-root-45 MuiButton-fab-62 MuiButton-extendedFab-63 MuiButton-contained-56 MuiButton-containedPrimary-57 MuiButton-raised-59 MuiButton-raisedPrimary-60 MuiButton-sizeLarge-69 ContactFormComponent-formButton-173"
+              disabled={false}
               id="contactSubmit"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex="0"
               type="submit"
             >
-              Send
+              <span
+                className="MuiButton-label-46"
+              >
+                Send
+              </span>
+              <span
+                className="MuiTouchRipple-root-263"
+              />
             </button>
           </form>
         </div>
