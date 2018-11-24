@@ -39,29 +39,24 @@ exports[`<HomePage /> should match render snapshot 1`] = `
     </a>
   </section>
   <div
-    className="ContactSection-container-31"
-    id="contact"
+    className="MuiGrid-container-33 MuiGrid-spacing-xs-24-57 ContactSection-container-31"
   >
     <div
-      className="MuiGrid-container-33 MuiGrid-spacing-xs-24-57"
+      className="MuiGrid-item-34 MuiGrid-grid-xs-12-73 MuiGrid-grid-md-6-95"
+    >
+      <img
+        alt="Mobile Phone Device"
+        className="ContactSection-responsive-32"
+        src="images/device.png"
+      />
+    </div>
+    <div
+      className="MuiGrid-item-34 MuiGrid-grid-xs-12-73 MuiGrid-grid-md-6-95"
     >
       <div
-        className="MuiGrid-item-34 MuiGrid-grid-xs-12-73 MuiGrid-grid-md-6-95"
+        className="ContactForm-form-130"
       >
-        <img
-          alt="Mobile Phone Device"
-          className="ContactSection-responsive-32"
-          src="images/device.png"
-        />
-      </div>
-      <div
-        className="MuiGrid-item-34 MuiGrid-grid-xs-12-73 MuiGrid-grid-md-6-95"
-      >
-        <div
-          className="ContactForm-form-130"
-        >
-          Contact Form
-        </div>
+        Contact Form
       </div>
     </div>
   </div>

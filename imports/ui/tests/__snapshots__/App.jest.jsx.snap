@@ -121,29 +121,24 @@ exports[`<App /> matches render snapshot 1`] = `
       </a>
     </section>
     <div
-      className="ContactSection-container-74"
-      id="contact"
+      className="MuiGrid-container-76 MuiGrid-spacing-xs-24-100 ContactSection-container-74"
     >
       <div
-        className="MuiGrid-container-76 MuiGrid-spacing-xs-24-100"
+        className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
+      >
+        <img
+          alt="Mobile Phone Device"
+          className="ContactSection-responsive-75"
+          src="images/device.png"
+        />
+      </div>
+      <div
+        className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
       >
         <div
-          className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
+          className="ContactForm-form-173"
         >
-          <img
-            alt="Mobile Phone Device"
-            className="ContactSection-responsive-75"
-            src="images/device.png"
-          />
-        </div>
-        <div
-          className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
-        >
-          <div
-            className="ContactForm-form-173"
-          >
-            Contact Form
-          </div>
+          Contact Form
         </div>
       </div>
     </div>

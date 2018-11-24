@@ -6,9 +6,7 @@ import ContactForm from "./ContactForm";
 
 const styles = {
   container: {
-    border: "2px solid brown",
-    margin: "5px",
-    padding: "5px",
+    padding: "8px",
   },
   responsive: {
     maxWidth: "100%",
@@ -22,16 +20,14 @@ const ContactSection = props => {
   } = props;
 
   return (
-    <div id="contact" className={container}>
-      <Grid container spacing={24}>
-        <Grid item xs={12} md={6}>
-          <img src="images/device.png" alt="Mobile Phone Device" className={responsive} />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <ContactForm />
-        </Grid>
+    <Grid container spacing={24} className={container}>
+      <Grid item xs={12} md={6}>
+        <img src="images/device.png" alt="Mobile Phone Device" className={responsive} />
       </Grid>
-    </div>
+      <Grid item xs={12} md={6}>
+        <ContactForm />
+      </Grid>
+    </Grid>
   );
 };
 
