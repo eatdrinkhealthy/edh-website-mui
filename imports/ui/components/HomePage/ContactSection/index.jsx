@@ -1,31 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import MobileImage from "./MobileImage";
+import Grid from "@material-ui/core/Grid";
 import ContactForm from "./ContactForm";
 
 const styles = {
   container: {
-    height: "400px",
     border: "2px solid brown",
     margin: "5px",
     padding: "5px",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-evenly",
-    alignItems: "center",
+  },
+  responsive: {
+    maxWidth: "100%",
+    height: "auto",
   },
 };
 
 const ContactSection = props => {
   const {
-    classes: { container },
+    classes: { container, responsive },
   } = props;
 
   return (
     <div id="contact" className={container}>
-      <MobileImage />
-      <ContactForm />
+      <Grid container spacing={24}>
+        <Grid item xs={12} md={6}>
+          <img src="images/device.png" alt="Mobile Phone Device" className={responsive} />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <ContactForm />
+        </Grid>
+      </Grid>
     </div>
   );
 };

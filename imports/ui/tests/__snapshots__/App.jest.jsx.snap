@@ -116,7 +116,7 @@ exports[`<App /> matches render snapshot 1`] = `
           Web App
         </span>
         <span
-          className="MuiTouchRipple-root-78"
+          className="MuiTouchRipple-root-174"
         />
       </a>
     </section>
@@ -125,19 +125,27 @@ exports[`<App /> matches render snapshot 1`] = `
       id="contact"
     >
       <div
-        className="MobileImage-root-75"
+        className="MuiGrid-container-76 MuiGrid-spacing-xs-24-100"
       >
-        <span
-          className="MobileImage-image-76"
+        <div
+          className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
         >
-          Mobile Image
-        </span>
+          <img
+            alt="Mobile Phone Device"
+            className="ContactSection-responsive-75"
+            src="images/device.png"
+          />
+        </div>
+        <div
+          className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
+        >
+          <div
+            className="ContactForm-form-173"
+          >
+            Contact Form
+          </div>
+        </div>
       </div>
-      <span
-        className="ContactForm-form-77"
-      >
-        Contact Form
-      </span>
     </div>
   </div>
   <footer

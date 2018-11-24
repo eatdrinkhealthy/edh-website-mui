@@ -14,7 +14,7 @@ const ContactForm = props => {
     classes: { form },
   } = props;
 
-  return <span className={form}>Contact Form</span>;
+  return <div className={form}>Contact Form</div>;
 };
 
 ContactForm.propTypes = {
