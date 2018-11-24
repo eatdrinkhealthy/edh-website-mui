@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import MobileImage from "./MobileImage";
+import ContactForm from "./ContactForm";
 
 const styles = {
   container: {
@@ -13,11 +15,6 @@ const styles = {
     justifyContent: "space-evenly",
     alignItems: "center",
   },
-  image: {
-    border: "1px dashed blue",
-    width: "80px",
-    textAlign: "center",
-  },
   form: {
     border: "1px dashed green",
     width: "80px",
@@ -27,13 +24,13 @@ const styles = {
 
 const Contact = props => {
   const {
-    classes: { container, image, form },
+    classes: { container, form },
   } = props;
 
   return (
     <div id="contact" className={container}>
-      <span className={image}>Image</span>
-      <span className={form}>Form</span>
+      <MobileImage />
+      <ContactForm />
     </div>
   );
 };
