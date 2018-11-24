@@ -116,7 +116,7 @@ exports[`<App /> matches render snapshot 1`] = `
           Web App
         </span>
         <span
-          className="MuiTouchRipple-root-174"
+          className="MuiTouchRipple-root-173"
         />
       </a>
     </section>
@@ -135,10 +135,79 @@ exports[`<App /> matches render snapshot 1`] = `
       <div
         className="MuiGrid-item-77 MuiGrid-grid-xs-12-116 MuiGrid-grid-md-6-138"
       >
-        <div
-          className="ContactForm-form-173"
-        >
-          Contact Form
+        <div>
+          <h2>
+            Contact Us
+          </h2>
+          <form
+            id="contactForm"
+            onSubmit={[Function]}
+          >
+            <div>
+              <label
+                htmlFor="contactName"
+              >
+                Name
+              </label>
+              <input
+                component="input"
+                id="contactName"
+                name="contactName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onDragStart={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="contactEmail"
+              >
+                Email
+              </label>
+              <input
+                component="input"
+                id="contactEmail"
+                name="contactEmail"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onDragStart={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                type="email"
+                value=""
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="contactMessage"
+              >
+                Message
+              </label>
+              <textarea
+                cols="10"
+                id="contactMessage"
+                name="contactMessage"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onDragStart={[Function]}
+                onDrop={[Function]}
+                onFocus={[Function]}
+                rows="50"
+                value=""
+              />
+            </div>
+            <button
+              className="button button--submit"
+              id="contactSubmit"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
         </div>
       </div>
     </div>

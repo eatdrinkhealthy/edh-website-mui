@@ -34,7 +34,7 @@ exports[`<HomePage /> should match render snapshot 1`] = `
         Web App
       </span>
       <span
-        className="MuiTouchRipple-root-131"
+        className="MuiTouchRipple-root-130"
       />
     </a>
   </section>
@@ -53,10 +53,79 @@ exports[`<HomePage /> should match render snapshot 1`] = `
     <div
       className="MuiGrid-item-34 MuiGrid-grid-xs-12-73 MuiGrid-grid-md-6-95"
     >
-      <div
-        className="ContactForm-form-130"
-      >
-        Contact Form
+      <div>
+        <h2>
+          Contact Us
+        </h2>
+        <form
+          id="contactForm"
+          onSubmit={[Function]}
+        >
+          <div>
+            <label
+              htmlFor="contactName"
+            >
+              Name
+            </label>
+            <input
+              component="input"
+              id="contactName"
+              name="contactName"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="contactEmail"
+            >
+              Email
+            </label>
+            <input
+              component="input"
+              id="contactEmail"
+              name="contactEmail"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              type="email"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="contactMessage"
+            >
+              Message
+            </label>
+            <textarea
+              cols="10"
+              id="contactMessage"
+              name="contactMessage"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onDragStart={[Function]}
+              onDrop={[Function]}
+              onFocus={[Function]}
+              rows="50"
+              value=""
+            />
+          </div>
+          <button
+            className="button button--submit"
+            id="contactSubmit"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import ContactForm from "./ContactForm";
+import ContactFormContainer from "./ContactFormContainer";
 
 const styles = {
   container: {
@@ -25,7 +25,7 @@ const ContactSection = props => {
         <img src="images/device.png" alt="Mobile Phone Device" className={responsive} />
       </Grid>
       <Grid item xs={12} md={6}>
-        <ContactForm />
+        <ContactFormContainer />
       </Grid>
     </Grid>
   );
