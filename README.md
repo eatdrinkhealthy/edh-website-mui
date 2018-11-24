@@ -19,7 +19,8 @@ A simple splash page website for Eat Drink Healthy.
 ## Styling
 * Material-UI components are used
 * MuiThemeProvider is used
-* Inline styling is used
+* withStyles styling is used
+* CSS also used (main.css)
 * Roboto Font is included via link in main.html
 
 ## Testing
