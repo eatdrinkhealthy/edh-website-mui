@@ -2,7 +2,7 @@
 
 exports[`<NavBar /> should match render snapshot 1`] = `
 <nav
-  className="header-container header-middle"
+  className="menubar-container menubar-middle"
 >
   <a
     aria-current="page"

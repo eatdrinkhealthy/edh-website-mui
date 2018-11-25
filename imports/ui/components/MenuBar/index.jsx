@@ -23,27 +23,31 @@ const styles = theme => ({
       justifyContent: "center",
     },
   },
+  spacer: {
+    height: "95px", // height of AppBar, keeps content below MenuBar
+  },
 });
 
 // App component - represents the whole app
-const Header = props => {
+const MenuBar = props => {
   const { classes } = props;
 
   return (
     <Fragment>
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolBar}>
           <Logo />
           <NavBar />
           <IconButtons />
         </Toolbar>
       </AppBar>
+      <div className={classes.spacer} />
     </Fragment>
   );
 };
 
-Header.propTypes = {
-  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+MenuBar.propTypes = {
+  classes: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
-export default withStyles(styles)(Header);
+export default withStyles(styles)(MenuBar);

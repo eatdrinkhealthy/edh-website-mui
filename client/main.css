@@ -6,32 +6,32 @@
   font-family: Lato;
 }
 
-/* Header Styling */
-.header-container {
+/* MenuBar Styling */
+.menubar-container {
   width: 280px;
   margin: 2px;
   display: flex;
   align-items: center;
 }
 
-.header-left {
+.menubar-left {
   justify-content: flex-start;
 }
 
-.header-middle {
+.menubar-middle {
   justify-content: space-around;
 }
 
-.header-right {
+.menubar-right {
   justify-content: flex-end;
 }
 
 @media all and (max-width:899px) {
-  .header-left {
+  .menubar-left {
     justify-content: space-around;
   }
 
-  .header-right {
+  .menubar-right {
     justify-content: space-around;
   }
 }
@@ -93,3 +93,35 @@ nav > a:hover {
     margin: 0 0 4px 0;
   }
 }
+
+/* Banner Styling - note, banner button styling is in component */
+
+.banner-container {
+  background-image: url("/images/blueberry_smoothie_sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 620px;
+  border-bottom: 8px solid #f28020;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-headline {
+  color: #fff;
+  font-size: 3.25em;
+  font-weight: bold;
+  line-height: 1;
+  margin: 10px 5% .5em 5%;
+}
+
+@media all and (max-width:1024px) {
+  .banner-container {
+    height: 400px;
+  }
+
+  .banner-headline {
+    font-size: 1.75em;
+  }
+}
+

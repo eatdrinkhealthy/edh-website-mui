@@ -24,7 +24,7 @@ const styles = theme => ({
 // if equal, set Contact to active
 // Note, may need to use Link instead of NavLink to do so
 const NavBar = ({ classes: { selected } }) => (
-  <nav className="header-container header-middle">
+  <nav className="menubar-container menubar-middle">
     <NavLink
       exact
       to="/"
@@ -53,7 +53,7 @@ const NavBar = ({ classes: { selected } }) => (
 );
 
 NavBar.propTypes = {
-  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  classes: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default withStyles(styles)(NavBar);

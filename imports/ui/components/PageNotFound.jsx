@@ -24,7 +24,7 @@ const PageNotFound = ({ classes }) => (
 );
 
 PageNotFound.propTypes = {
-  classes: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  classes: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default withStyles(styles)(PageNotFound);
