@@ -110,6 +110,7 @@ const ContactFormComponent = props => {
 
 ContactFormComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
+  classes: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 const onSubmitSuccess = (result, dispatch, props) => {
