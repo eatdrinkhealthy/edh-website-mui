@@ -14,7 +14,7 @@ const mountFormWithInputs = (formComponent, inputs, store) => {
     : mount(formComponent); // for standard forms
 
   _.forIn(inputs, (value, input) => {
-    wrapper.find("input[name='" + input + "']").simulate("change", { target: { value } });
+    wrapper.find(`input[name='${input}']`).simulate("change", { target: { value } });
   });
 
   return wrapper;
